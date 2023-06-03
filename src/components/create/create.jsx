@@ -26,16 +26,18 @@ export function Create() {
   }
 
   function handleClick() {
-    const newNote = {
-      id: Date.now(),
-      title: title,
-      text: input,
-      date: timeStamp
-  }
-    dispatch(createNote(newNote))
-    setLocalData([...note, newNote])
-    setInput('')
-    setTitle('')
+    if(input) {
+      const newNote = {
+        id: Date.now(),
+        title: title,
+        text: input,
+        date: timeStamp
+    }
+      dispatch(createNote(newNote))
+      setLocalData([...note, newNote])
+      setInput('')
+      setTitle('')
+    }
   }
 
   return (
