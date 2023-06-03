@@ -1,0 +1,21 @@
+.navContainer {
+    display: flex;
+    background-image: linear-gradient(3deg,rgb(32, 22, 22), rgb(77, 54, 54), black);
+    height: 7vh;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.link {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.link:hover {
+    color: rgb(238, 18, 18);
+    font-weight: 900;
+    text-decoration: underline;
+}

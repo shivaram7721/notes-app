@@ -1,0 +1,18 @@
+.createBtn {
+    cursor: pointer;
+}
+
+.list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    background-color: azure;
+    width: 100vw;
+    height: 83vh;
+}
+
+.routeAdd {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
