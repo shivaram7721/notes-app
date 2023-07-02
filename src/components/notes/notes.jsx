@@ -35,8 +35,8 @@ export function Notes() {
     <div className={styles.container}>
         
       <div className={styles.notesMain}>
-        {myNotes &&
-          myNotes.map((note, index) => (
+        {note &&
+          note.map((note, index) => (
             <div className={styles.notesContainer} key={note.id}>
               <div>
                 <span className={styles.title} key={note.id}>
