@@ -1,14 +1,15 @@
 import styles from "./header.module.css";
 import { Notes } from "../notes/notes";
 import { useNavigate } from "react-router-dom";
-// import { useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import { getLocalData } from "../../utils/localStorage";
 
 export function Header() {
 
-  // const note = useSelector(state=>state.notes)
-  // console.log(note)
+  const note = useSelector(state=>state.notes)
+  
   const notes = getLocalData();
+  console.log(notes)
 
   const navigate = useNavigate();
 
@@ -18,7 +19,7 @@ export function Header() {
 
   return (
     <div className={styles.list}>
-      {notes.length === 0 ? (
+      {note.length === 0 ? (
         <h1 className={styles.routeAdd}>
           Click to add Notes{" "}
           <span className={styles.createBtn} onClick={handleAdd}>

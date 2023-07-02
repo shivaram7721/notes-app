@@ -33,7 +33,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 90px;
+    gap: 80px;
 }
 
 .notesFormat {
@@ -66,10 +66,24 @@
 
 .delete {
     cursor: pointer;
+    transition-duration: .5s;
+    transition-property: all;
+}
+
+.delete:hover {
+    color: red;
+    transform: scale(1.5);
 }
 
 .edit {
     cursor: pointer;
+    transition-duration: .5s;
+    transition-property: all;
+}
+
+.edit:hover {
+    color: green;
+    transform: scale(1.5);
 }
 
 .date {
