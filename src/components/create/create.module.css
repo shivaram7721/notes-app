@@ -85,3 +85,17 @@
     background-color: rgb(146, 94, 194);
     margin-bottom: 50px;
 }
+
+@media only screen and (max-width: 560px) {
+    .textContainer {
+        width: 80vw
+    }
+
+    .titleInp {
+        width: 60vw;
+    }
+
+    .textarea {
+        width: 60vw;
+    }
+}
